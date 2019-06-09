@@ -6,8 +6,8 @@ RUN apt-get update && apt-get upgrade -y python3 && apt-get install -y mosquitto
 
 RUN pip3 install paho-mqtt
 
+USER coder
+
 RUN cd /home/coder && git clone https://github.com/CiscoDevNet/iot-protocols
 
 WORKDIR /home/coder/iot-protocols
-
-USER coder
