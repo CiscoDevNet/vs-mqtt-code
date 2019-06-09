@@ -8,6 +8,6 @@ RUN pip3 install paho-mqtt
 
 USER coder
 
-RUN cd /home/coder && git clone https://github.com/CiscoDevNet/iot-protocols
+RUN cd / && cd /home/coder && git clone https://github.com/CiscoDevNet/iot-protocols
 
 WORKDIR /home/coder/iot-protocols
